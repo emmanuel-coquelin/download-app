@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    pre #{series.length}
+    ul
+        each serie in series
+            li
+                h3= serie.title
+                img(src=serie.cover)
